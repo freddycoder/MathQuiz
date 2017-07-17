@@ -12,6 +12,8 @@ print("Pour quitté tapper x")
 while run == True:
 #Choisir une opération au hasard
     operation = random.randrange(1, 7)
+
+    operation = 1
 #Division
     if operation == 1:
         num1=random.randrange(-13, 13)
@@ -23,7 +25,7 @@ while run == True:
         reponse=num1*num2
 
         print(str(reponse) + " / " + str(num2))
-        #Text to speech section
+        #Vérifier si le premier nombre est négatif pour la bonne prononciation de gTTS
         if reponse < 0:
             tts = gTTS(text="Diviser moins" + str(reponse) + " par " + str(num2) + "?", lang="fr")
             tts.save("question.mp3")
@@ -32,6 +34,7 @@ while run == True:
             tts = gTTS(text="Diviser " + str(reponse) + " par " + str(num2) + "?", lang="fr")
             tts.save("question.mp3")
             playsound("question.mp3")
+
         tentative=input("Réponse : ")
 
         if tentative == "x":
@@ -46,6 +49,7 @@ while run == True:
             print("Mauvaise réponse")
             playsound("mauvaise_reponse.mp3")
             question_total += 1
+
 #Multiplication
     elif operation == 2:
         num1=random.randrange(-13, 13)
