@@ -1,9 +1,7 @@
 #!/bin/bash
 
-sudo install pip3 -y
+sudo install python3-pip -y
 
-pip3 install PyAudio
 pip3 install PlaySound
 pip3 install gTTS
 pip3 install random
-pip3 install SpeechRecognition
