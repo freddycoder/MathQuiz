@@ -13,7 +13,6 @@ while run == True:
 #Choisir une opération au hasard
     operation = random.randrange(1, 7)
 
-    operation = 1
 #Division
     if operation == 1:
         num1=random.randrange(-13, 13)
@@ -228,7 +227,7 @@ if 100*bonne_reponse/question_total < 60:
     tts.save("commentaire.mp3")
     playsound("commentaire.mp3")
 elif bonne_reponse == question_total:
-    print("Waouw! Tu eu la bonne réponse pour tous les questions!")
+    print("Waouw! Tu eu les bonnes réponses pour tous les questions!")
     tts=gTTS(text="Waouw! Tu as eu la bonne réponse pour toutes les questions!", lang="fr")
     tts.save("commentaire.mp3")
     playsound("commentaire.mp3")
