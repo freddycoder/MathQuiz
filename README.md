@@ -32,7 +32,7 @@ Pour des équations plus difficiles ou plus facile, il est possible de modifier 
 
 ## Contribuer
 
-Please don't esitate.
+Please don't hesitate.
 
 ## License
 
